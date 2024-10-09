@@ -16,4 +16,3 @@ Este repositório implementa um sistema de reservas de salas de conferência, co
 - Código para cada uma das transações.
 - Tabela de escalonamento das execuções das transações, detalhando resultados e observações.
 
-Este projeto é uma excelente oportunidade para aplicar conceitos teóricos de banco de dados em um contexto prático e realista, explorando o funcionamento de transações em um ambiente Oracle.
