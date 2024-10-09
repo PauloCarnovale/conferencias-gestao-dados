@@ -1,0 +1,8 @@
+Ordem de Execução | T1 (Transação 1)   | T2 (Transação 2)   | T3 (Transação 3)     | T4 (Transação 4)   | Observação
+-------------------------------------------------------------------------------------------------------------------
+1                 |                    | Atualiza reserva   |                      |                    | T2 inicia a atualização
+2                 |                    |                    | Leitura sala 1        |                    | T3 lê a reserva original
+3                 | Inserção reserva    |                    |                      |                    | T1 insere nova reserva
+4                 |                    | COMMIT             |                      |                    | T2 faz commit
+5                 |                    |                    | Releitura sala 1      | Bloqueia RESERVAS  | T4 tenta bloquear e ocorre deadlock
+6                 | COMMIT             |                    |                      |                    | T1 faz commit
